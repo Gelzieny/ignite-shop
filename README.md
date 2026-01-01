@@ -1,6 +1,29 @@
-# 🛍️ Ignite Shop
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Gelzieny/ignite-shop/f45372628719c6deb06b6cb7ad068c3ef2543ac8/public/logo.svg" alt="Logo" width="200"/>
+</p>
 
 E-commerce moderno desenvolvido com Next.js 16 (App Router), integrado com Stripe para processamento de pagamentos.
+
+
+## 📄 Instruções do Desafio
+
+Confira os detalhes completos do desafio [clicando aqui](https://efficient-sloth-d85.notion.site/Desafio-04-Adicionando-features-ao-Ignite-Shop-91e5b2c26c9342f5b1375ba66907d0b7).
+
+
+## 🎨 Layout
+
+O layout da aplicação está disponível no [Figma](https://www.figma.com/design/ZaS2ENOVY5Mq4Gm3mHUA9i/Ignite-Shop-2.0-%E2%80%A2-Desafio-React--Copy---Copy-?t=MAfuu85Jp9zlHDlk-0)
+
+## 📸 Preview do Projeto
+
+<p align="center">
+  <img src="https://github.com/Gelzieny/ignite-shop/blob/main/.github/imgs/home.png?raw=true" alt="Home do projeto" width="400"/>
+  <img src="https://github.com/Gelzieny/ignite-shop/blob/main/.github/imgs/Product.png?raw=true" alt="Produto" width="400"/>
+  <img src="https://github.com/Gelzieny/ignite-shop/blob/main/.github/imgs/sacola.png?raw=true" alt="Produto na sacola" width="400"/>
+  <img src="https://github.com/Gelzieny/ignite-shop/blob/main/.github/imgs/Purchase.png?raw=true" alt="Compra efetuada" width="400"/>
+</p>
+
+
 
 ## 🚀 Tecnologias
 
@@ -24,30 +47,38 @@ E-commerce moderno desenvolvido com Next.js 16 (App Router), integrado com Strip
 - 🔄 Carrossel de produtos
 - ✅ Página de confirmação de compra
 
-## 📋 Pré-requisitos
+## 🚀 Como executar o projeto
 
-- Node.js 20+ 
-- npm, yarn ou pnpm
-- Conta no [Stripe](https://stripe.com/)
+### Pré-requisitos
 
-## 🔧 Instalação
+<p align="justify">Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:</p>
 
-1. Clone o repositório:
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=git,nodejs,vite,vscode" />
+</a>
+
+
+### Clone o repositório
+
 ```bash
-git clone <url-do-repositorio>
-cd ignite-shop
+# Clone este repositório
+$ git clone <https://github.com/Gelzieny/ignite-shop.git>
+
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd ignite-shop
+
+# Instale as dependências  pnpm | npm | yarn
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento pnpm | npm | yarn
+$ npm run dev
+
+
+# O servidor inciará na porta:3334 - acesse <http://localhost:3000/>
 ```
 
-2. Instale as dependências:
-```bash
-npm install
-# ou
-pnpm install
-# ou
-yarn install
-```
-
-3. Configure as variáveis de ambiente:
+### Configure as variáveis de ambiente:
 
 Crie um arquivo `.env.local` na raiz do projeto:
 
@@ -61,27 +92,6 @@ Para obter suas chaves do Stripe:
 1. Acesse [dashboard.stripe.com](https://dashboard.stripe.com/)
 2. Vá em **Developers > API keys**
 3. Copie a **Secret key** (use as chaves de teste para desenvolvimento)
-
-4. Inicie o servidor de desenvolvimento:
-```bash
-npm run dev
-```
-
-Acesse [http://localhost:3000](http://localhost:3000)
-
-## 🏗️ Build
-
-Para criar a build de produção:
-
-```bash
-npm run build
-```
-
-Para iniciar o servidor de produção:
-
-```bash
-npm start
-```
 
 ## 📁 Estrutura do Projeto
 
@@ -122,41 +132,17 @@ src/
 5. **Complete o pagamento**: Você será redirecionado para o checkout do Stripe
 6. **Confirmação**: Após o pagamento, veja a página de sucesso
 
-## 🧪 Testes com Stripe
-
-Para testar pagamentos em ambiente de desenvolvimento, use os cartões de teste do Stripe:
-
-- **Número do cartão**: `4242 4242 4242 4242`
-- **Data de validade**: Qualquer data futura
-- **CVC**: Qualquer 3 dígitos
-- **CEP**: Qualquer 5 dígitos
-
-Mais cartões de teste: [stripe.com/docs/testing](https://stripe.com/docs/testing)
-
-## 🚢 Deploy
-
-O projeto pode ser deployado em plataformas como:
-
-- **[Vercel](https://vercel.com/)** (recomendado para Next.js)
-- **[Netlify](https://www.netlify.com/)**
-- **[Railway](https://railway.app/)**
-
-### Deploy na Vercel:
-
-1. Conecte seu repositório
-2. Configure as variáveis de ambiente:
-   - `STRIPE_SECRET_KEY`
-   - `NEXT_PUBLIC_URL`
-3. Deploy automático!
 
 ## 📝 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 👨‍💻 Desenvolvido com ❤️
+# 🧑🏻‍💻 Autor
 
-Projeto desenvolvido durante o bootcamp Ignite da Rocketseat.
+Feito com ❤️ por Gelzieny R. Martins 👋🏽 [Entre em contato!](https://gelzieny-dev.vercel.app/)
 
 ---
 
+<p align="center">
 ⭐ Se este projeto foi útil, considere dar uma estrela!
+</p>
