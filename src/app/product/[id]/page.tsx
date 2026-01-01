@@ -60,8 +60,6 @@ export async function generateMetadata({
   };
 }
 
-export const revalidate = 60 * 60 * 1; // 1 hour
-
 export default async function ProductPage({ params }: ProductPageProps) {
   const { id } = await params;
   const product = await getProduct(id);

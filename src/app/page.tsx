@@ -41,8 +41,6 @@ async function getProducts(): Promise<IProduct[]> {
   return products;
 }
 
-export const revalidate = 60 * 60 * 2; // 2 hours
-
 export default async function Home() {
   const products = await getProducts();
   
