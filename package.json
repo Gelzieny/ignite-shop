@@ -10,9 +10,16 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@stitches/react": "^1.2.8",
+    "axios": "^1.13.2",
+    "embla-carousel-react": "^8.6.0",
+    "keen-slider": "^6.8.6",
     "next": "16.1.1",
+    "phosphor-react": "^1.4.1",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "stripe": "^20.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
