@@ -1,9 +1,9 @@
 import Stripe from "stripe";
 
-const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY || "";
 
-if (!stripeSecretKey) {
-  throw new Error("STRIPE_SECRET_KEY is not defined");
+if (!stripeSecretKey && process.env.NODE_ENV !== "production") {
+  console.warn("STRIPE_SECRET_KEY is not defined");
 }
 
 export const stripe = new Stripe(stripeSecretKey, {

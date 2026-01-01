@@ -14,6 +14,8 @@ interface ProductPageProps {
   }>;
 }
 
+export const dynamic = 'force-dynamic';
+
 async function getProduct(id: string): Promise<IProduct | null> {
   try {
     const product = await stripe.products.retrieve(id, {

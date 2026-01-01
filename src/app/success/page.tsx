@@ -15,6 +15,8 @@ export const metadata: Metadata = {
   robots: "noindex",
 };
 
+export const dynamic = 'force-dynamic';
+
 interface SuccessPageProps {
   searchParams: Promise<{
     session_id?: string;

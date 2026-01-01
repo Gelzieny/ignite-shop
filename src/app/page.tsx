@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   title: "Home | Ignite Shop",
 };
 
+export const dynamic = 'force-dynamic';
+
 async function getProducts(): Promise<IProduct[]> {
   const response = await stripe.products.list({
     expand: ["data.default_price"],
