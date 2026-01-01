@@ -16,17 +16,19 @@ export const metadata: Metadata = {
 };
 
 interface SuccessPageProps {
-  searchParams: {
+  searchParams: Promise<{
     session_id?: string;
-  };
+  }>;
 }
 
 export default async function SuccessPage({ searchParams }: SuccessPageProps) {
-  if (!searchParams.session_id) {
+  const { session_id } = await searchParams;
+  
+  if (!session_id) {
     redirect("/");
   }
 
-  const sessionId = searchParams.session_id;
+  const sessionId = session_id;
 
   const session = await stripe.checkout.sessions.retrieve(sessionId, {
     expand: ["line_items", "line_items.data.price.product"],
