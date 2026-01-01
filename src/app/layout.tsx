@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import "./globals.css";
+
+import { Header } from "@/components/Header";
+import { Container } from "@/styles/pages/app";
+import { CartContextProvider } from "@/contexts/CartContext";
+import { StitchesRegistry } from "@/components/StitchesRegistry";
 
 const geistRobo = Roboto({
   variable: "--font-geist-robo",
@@ -21,7 +25,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistRobo.variable}`}>
-        {children}
+        <StitchesRegistry>
+          <CartContextProvider>
+            <Container>
+              <Header />
+              {children}
+            </Container>
+          </CartContextProvider>
+        </StitchesRegistry>
       </body>
     </html>
   );
